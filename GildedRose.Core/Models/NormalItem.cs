@@ -7,9 +7,9 @@ namespace GildedRose.Core.Models
 {
     public class NormalItem : Item
     {
-        private List<Delegate> Attributes = new();
+        private List<Action<Item>> Attributes = new();
 
-        public NormalItem(string name, int sellIn, int quality, List<Delegate> attributes) : base(name, sellIn, quality) {
+        public NormalItem(string name, int sellIn, int quality, List<Action<Item>> attributes) : base(name, sellIn, quality) {
             Attributes = attributes;
         }
 
