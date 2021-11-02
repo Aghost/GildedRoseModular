@@ -40,7 +40,7 @@ namespace GildedRose.Core.LogicDelegates
                     case "Elixir of the Mongoose": NormalQuality(item); goto clamp;
                     case "Backstage passes to a TAFKAL80ETC concert": ExpiringQuality(item); goto clamp;
                     case "Conjured Mana Cake": ConjuredQuality(item); goto clamp;
-                    case "Sulfuras, Hand of Ragnaros":item.SellIn++; break;
+                    case "Sulfuras, Hand of Ragnaros": item.SellIn++; break;
                     clamp: ClampQuality(item); break;
                     default: break;
                 };
